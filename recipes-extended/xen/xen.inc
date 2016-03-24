@@ -153,6 +153,7 @@ PACKAGES = "\
     ${PN}-doc \
     ${PN}-efi \
     ${PN}-flask \
+    ${PN}-flask-tools \
     ${PN}-fsimage \
     ${PN}-gdbsx \
     ${PN}-hvmloader \
@@ -342,13 +343,16 @@ FILES_${PN}-devd = "\
     "
 
 FILES_${PN}-flask = "\
+    /boot/xenpolicy-${PV} \
+    "
+
+FILES_${PN}-flask-tools = "\
     ${sbindir}/flask-get-bool \
     ${sbindir}/flask-getenforce \
     ${sbindir}/flask-label-pci \
     ${sbindir}/flask-loadpolicy \
     ${sbindir}/flask-set-bool \
     ${sbindir}/flask-setenforce \
-    /boot/xenpolicy-${PV} \
     "
 
 FILES_${PN}-gdbsx = "\
